@@ -1,62 +1,70 @@
 # Employee Management System
 
-![Project Demo](https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif)
+![Worker](https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif)
 
-## Описание
+## Description
 
-Этот проект — система управления сотрудниками на базе **Spring Boot** с использованием **Spring Data JPA** и **H2 Database** (или любой другой базы данных, поддерживаемой JPA).
-Позволяет создавать, получать, обновлять и удалять информацию о сотрудниках через REST API.
+This project is an **Employee Management System** built with **Spring Boot**, using **Spring Data JPA** and **H2 Database** (or any other JPA-supported database). 
+It allows creating, retrieving, updating, and deleting employee information via REST API.
 
-## Функционал
-- **Добавление сотрудника** (`POST /api/v1/createEmployee`)
-- **Получение списка всех сотрудников** (`GET /api/v1/checkEmployee`)
-- **Удаление сотрудника по email** (`DELETE /api/v1/deleteEmployee/{email}`)
-- **Обновление данных сотрудника (email и зарплата)** (`PUT /api/v1/changeEmployee/{email}`)
+## Features
+- **Add an employee** (`POST /api/v1/createEmployee`)
+- **Retrieve all employees** (`GET /api/v1/checkEmployee`)
+- **Delete an employee by email** (`DELETE /api/v1/deleteEmployee/{email}`)
+- **Update employee details (email and salary)** (`PUT /api/v1/changeEmployee/{email}`)
 
-## Структура проекта
+## Project Structure
 
-### 1. Конфигурация
-- `EmployeeConfig.java` — содержит предзаполненные данные (закомментировано).
+### 1. Configuration
+- `EmployeeConfig.java` — contains preloaded employee data (commented out).
 
-### 2. Контроллеры
-- `EmployeeController.java` — REST API для управления сотрудниками.
+### 2. Controllers
+- `EmployeeController.java` — REST API controller for managing employees.
 
-### 3. Сущность (Entity)
-- `Employee.java` — класс-сущность для хранения данных сотрудников в базе данных.
+### 3. Entity
+- `Employee.java` — entity class for storing employee details in the database.
 
-### 4. Репозиторий
-- `EmployeeRepository.java` — интерфейс для работы с базой данных через Spring Data JPA.
+### 4. Repository
+- `EmployeeRepository.java` — interface for database operations using Spring Data JPA.
 
-### 5. Сервис
-- `EmployeeService.java` — бизнес-логика приложения, работа с данными сотрудников.
+### 5. Service
+- `EmployeeService.java` — business logic handling employee data.
 
-## Установка и запуск
+## Installation & Run
 
-### 1. Клонирование репозитория:
+### 1. Clone the repository:
 ```sh
-git clone <URL-репозитория>
-cd <папка-репозитория>
+git clone <repository-URL>
+cd <repository-folder>
 ```
 
-### 2. Сборка и запуск проекта:
+### 2. Build and start the project:
 ```sh
-./mvnw spring-boot:run  # Для Maven
-./gradlew bootRun       # Для Gradle
+./mvnw spring-boot:run  # For Maven
+./gradlew bootRun       # For Gradle
 ```
 
-### 3. Проверка API
-После запуска сервера API доступно по адресу: `http://localhost:8080/api/v1/`
+### 3. API Testing
+Once the server is running, the API is available at: `http://localhost:8080/api/v1/`
 
-Примеры запросов можно тестировать через **Postman** или **cURL**.
+You can test the API using **Postman** or **cURL**.
 
-## Требования
+## Requirements
 - **Java 17+**
 - **Spring Boot 3+**
 - **Maven/Gradle**
 
-## Контакты
-Если у вас есть вопросы, предложения или ошибки, создайте [Issue](https://github.com/your-repo/issues) или свяжитесь со мной.
+## Contact
+<a href="https://github.com/https://github.com/tteemma" target="_blank">
+<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
+<a href="https://gitlab.com/https://gitlab.se.ifmo.ru/Temo4ka" target="_blank">
+<img src=https://img.shields.io/badge/gitlab-330F63.svg?&style=for-the-badge&logo=gitlab&logoColor=white alt=gitlab style="margin-bottom: 5px;" />
+</a>
+<a href="https://t.me/ttemmaaa" target="_blank">
+  <img src="https://img.shields.io/badge/telegram-0088cc.svg?&style=for-the-badge&logo=telegram&logoColor=white" alt="telegram" style="margin-bottom: 5px;" />
+</a>
 
 ---
-_Этот проект создан в образовательных целях._
+_This project was created for educational purposes._
 
